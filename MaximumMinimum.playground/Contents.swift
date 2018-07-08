@@ -14,7 +14,7 @@ func maxMin<T: Comparable>(_ array:[T]) -> (minumum:T, maximum:T)? {
     
     // if we have odd number of elements in the array, remove first one
     // this will return one if elements are odd
-    var start = array.count % 2
+    let start = array.count % 2
     
     for i in stride(from: start, to: array.count, by: 2) {
      let pair = (array[i], array[i+1])
